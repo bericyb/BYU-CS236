@@ -1,0 +1,19 @@
+void schemer()
+    // scheme -> ID LEFT_PAREN ID idList RIGHT_PAREN
+    {
+        state = "Schemer";
+        std::vector<Parameter*> temp;
+        std::vector<Parameter*> list;
+        std::string name = matcher("ID")->GetRaw();
+        matcher("LEFT_PAREN");
+        Parameter *first = new PlainParameter(matcher("ID")->GetRaw());
+        list.push_back(first);
+
+        temp = idLister();
+
+        list.insert(list.end(), temp.begin(), temp.end()); 
+
+        Predicate *preddy = new Predicate(name);
+        preddy->addRaw(list);
+        myProgram->addSchemepred(preddy);
+    }

@@ -1,0 +1,27 @@
+# COPYRIGHT © BRIGHAM YOUNG UNIVERSITY CS 236
+# FOR USE ONLY DURING FALL 2020 SEMESTSER
+'Hello World!'
+Hello World
+'Hello' 'World'
+Hello  World
+
+'ThisIsAString'
+ThisIsAnID
+
+'
+This
+string
+is
+spread
+across
+many
+lines.
+'
+
+These
+are
+all
+separate
+IDs
+
+Schemes 'is different than' schemes
